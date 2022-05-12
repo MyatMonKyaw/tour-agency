@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Mist Tour Agency</title>
+</head>
+<body class="font-poppins m-0 p-0 box-border capitalize focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-indigo-400 border-0 selection:bg-amber-400 selection:text-white
+text-[62.5%] overflow-x-hidden scroll-pt-24 scroll-smooth transform duration-200 ease-in">
+    <!-- header section starts -->
+    <header class="fixed top-0 left-0 right-0 bg-slate-700 z-[1000] flex items-center justify-between py-4 px-[9%]">
+        <div id="menu-bar" class="fas fa-bars md:hidden text-white border-2 border-white rounded-lg text-4xl cursor-pointer"></div>
+
+        <div class="logo flex items-center justify-around cursor-pointer">
+            <img src="../images/logo.png" class="w-20 h-16 drop-shadow-lg">
+            <a href="#" class="logo text-3xl font-bold text-white drop-shadow-lg"><span class="text-amber-400">T</span>ravel</a>
+        </div>
+
+        <nav class="navbar">
+            <a class="relative text-white text-xl my-0 mx-3 pb-1 transform hover:text-amber-400 after:border-b-2 after:border-amber-400 after:w-full after:bg-amber-400 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left" href="#home">home</a>
+            <a class="relative text-white text-xl my-0 mx-3 pb-1 transform hover:text-amber-400 after:border-b-2 after:border-amber-400 after:w-full after:bg-amber-400 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left" href="#book">book</a>
+            <a class="relative text-white text-xl my-0 mx-3 pb-1 transform hover:text-amber-400 after:border-b-2 after:border-amber-400 after:w-full after:bg-amber-400 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left" href="#packages">packages</a>
+            <a class="relative text-white text-xl my-0 mx-3 pb-1 transform hover:text-amber-400 after:border-b-2 after:border-amber-400 after:w-full after:bg-amber-400 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left" href="#services">services</a>
+            <a class="relative text-white text-xl my-0 mx-3 pb-1 transform hover:text-amber-400 after:border-b-2 after:border-amber-400 after:w-full after:bg-amber-400 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left" href="#gallery">gallery</a>
+            <a class="relative text-white text-xl my-0 mx-3 pb-1 transform hover:text-amber-400 after:border-b-2 after:border-amber-400 after:w-full after:bg-amber-400 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left" href="#review">review</a>
+            <a class="relative text-white text-xl my-0 mx-3 pb-1 transform hover:text-amber-400 after:border-b-2 after:border-amber-400 after:w-full after:bg-amber-400 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left" href="#contact">contact</a>
+        </nav>
+
+        <div class="icons flex items-center justify-around">
+            <i class="fas fa-search text-2xl text-white hover:text-amber-400 cursor-pointer mr-8" id="search-btn"></i>
+            <i class="fas fa-user text-2xl text-white hover:text-amber-400 cursor-pointer mr-8" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container absolute top-full left-0 right-0 py-6 px-8 bg-slate-700 border-t-2 border-slate-500 flex items-center z-[1001] clip-path active:clip-path-hover">
+            <input type="search" class="w-full p-4 transform-none text-slate-800 text-xl rounded-lg" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search text-white cursor-pointer text-3xl ml-6 hover:text-amber-400"></label>
+        </form>
+    </header>
+    <!-- header section ends -->
+
+    <!-- login form container starts -->
+    <div class="login-form-container fixed z-[10000] top-[-120%] active:top-0 left-0 min-h-screen w-full bg-slate-500 bg-opacity-40 flex items-center justify-center">
+        <i class="fas fa-times absolute top-8 right-12 text-4xl text-white cursor-pointer hover:text-amber-400" id="form-close"></i>
+        <form action="" class="m-8 py-6 px-8 rounded-xl shadow-md bg-white w-2/5">
+            <h3 class="text-3xl text-amber-400 uppercase text-center py-4 px-0 font-semibold">login</h3>
+            <input type="email" class="box w-full p-4 text-xl text-slate-500 my-3 mx-0 border-2 border-amber-500 rounded-lg transform-none" placeholder="enter your email">
+            <input type="password" class="box w-full p-4 text-xl text-slate-500 my-3 mx-0 border-2 border-amber-500 rounded-lg transform-none" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn block w-full mt-4 text-white py-3 px-12 bg-amber-400 border-2 border-amber-400 cursor-pointer text-xl hover:bg-transparent hover:text-amber-400">
+            <input type="checkbox" id="remember" class="my-8 mx-0">
+            <label for="remember" class="text-xl normal-case">remember me</label>
+            <p class="py-1 px-0 text-center text-slate-500 normal-case text-base">forget password? <a class="text-amber-400 font-semibold hover:text-slate-500 hover:underline" href="#">click here</a></p>
+            <p class="py-1 px-0 text-center text-slate-500 normal-case text-base">don't have an account? <a class="text-amber-400 font-semibold hover:text-slate-500 hover:underline" href="#">register now</a></p>
+        </form>
+    </div>
+    <!-- login form container ends -->
+
+    <!-- home section starts -->
+    <section class="home min-h-screen flex items-center justify-center flex-col relative z-0" id="home">
+        <div class="content text-center bg-slate-400 bg-opacity-20 p-8">
+            <h3 class="text-6xl text-amber-400 uppercase font-semibold pt-4">adventure is worthwhile</h3>
+            <p class="text-2xl text-white py-2 px-0 mb-4 pt-4">discover new places with us, adventure awaits.</p>
+            <a href="#" class="btn inline-block w-2/5 mt-4 text-white py-3 px-12 bg-amber-400 shadow-md shadow-lime-400/20 hover:shadow-lime-400/50 border-2 border-amber-400 cursor-pointer text-xl hover:bg-transparent hover:text-amber-400">discover more</a>
+        </div>
+
+        <div class="controls p-3 rounded-full bg-black relative top-40">
+            <span class="vid-btn active w-6 h-6 inline-block rounded-full bg-slate-500 cursor-pointer my-0 mx-2" data-src="../images/vid-1.mp4"></span>
+            <span class="vid-btn w-6 h-6 inline-block rounded-full bg-amber-300 cursor-pointer my-0 mx-2" data-src="../images/vid-2.mp4"></span>
+            <span class="vid-btn w-6 h-6 inline-block rounded-full bg-amber-300 cursor-pointer my-0 mx-2" data-src="../images/vid-3.mp4"></span>
+            <span class="vid-btn w-6 h-6 inline-block rounded-full bg-amber-300 cursor-pointer my-0 mx-2" data-src="../images/vid-4.mp4"></span>
+            <span class="vid-btn w-6 h-6 inline-block rounded-full bg-amber-300 cursor-pointer my-0 mx-2" data-src="../images/vid-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="../images/vid-1.mp4" class="absolute top-0 left-0 z-[-1] h-full w-full object-cover" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- booking section starts -->
+    <section class="book py-8 px-10" id="book">
+        <h1 class="text-center py-10 px-0">
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">b</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">o</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">o</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">k</span>
+            <span class="bg-transparent"></span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">n</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">o</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">w</span>
+        </h1>
+        <div class="flex flex-wrap gap-6 items-center">
+            <div class="flex-1">
+                <img src="../images/book-img.svg" class="w-full">
+            </div>
+
+            <form action="" class="flex-1 p-8 rounded-lg shadow-lg shadow-lime-400/50">
+                <div class="inputBox py-2 px-0">
+                    <h3 class="text-2xl py-4 px-0 text-slate-700">where to</h3>
+                    <input class="w-full p-4 border-amber-500 border-opacity-40 text-xl text-black transform-none" type="text" placeholder="enter place name">
+                </div>
+                <div class="inputBox py-2 px-0">
+                    <h3 class="text-2xl py-4 px-0 text-slate-700">how many</h3>
+                    <input class="w-full p-4 border-amber-500 border-opacity-40 text-xl text-black transform-none" type="number" placeholder="enter no. of guests">
+                </div>
+                <div class="inputBox py-2 px-0">
+                    <h3 class="text-2xl py-4 px-0 text-slate-700">arrivals</h3>
+                    <input class="w-full p-4 border-amber-500 border-opacity-40 text-xl text-black transform-none" type="date">
+                </div>
+                <div class="inputBox py-2 px-0">
+                    <h3 class="text-2xl py-4 px-0 text-slate-700">leaving</h3>
+                    <input class="w-full p-4 border-amber-500 border-opacity-40 text-xl text-black transform-none" type="date">
+                </div>
+                <input type="submit" class="block w-2/5 mx-auto mt-4 text-white py-3 px-12 bg-amber-400 border-2 border-amber-400 cursor-pointer text-xl shadow-md shadow-lime-400/20 hover:shadow-lime-400/60 hover:bg-transparent hover:text-amber-400" value="book now">
+            </form>
+        </div>
+    </section>
+    <!-- booking section ends -->
+
+    <!-- packages section starts -->
+    <section class="packages py-8 px-10" id="packages">
+        <h1 class="text-center py-10 px-0">
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">p</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">a</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">c</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">k</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">a</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">g</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">e</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">s</span>
+        </h1>
+
+        <div class="flex flex-wrap gap-8">
+            <!-- <div class="relative group"> -->
+                <!-- <div class="absolute -inset-0.5 rounded-lg blur opacity-75 bg-gradient-to-br from-pink-600 to-purple-600"></div> -->
+            
+                <div class="flex-1 rounded-lg overflow-hidden shadow-lg shadow-lime-500/50">
+                    <img src="../images/p-1.jpg" class="h-96 w-full object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl text-black"><i class="fas fa-map-marker-alt text-amber-400"></i> mumbai</h3>
+                        <p class="text-lg text-slate-600 py-4 px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni maiores esse? Alias, pariatur fugiat.</p>
+                        <div class="stars">
+                            <i class="fas fa-star text-lg text-amber-400"></i>
+                            <i class="fas fa-star text-lg text-amber-400"></i>
+                            <i class="fas fa-star text-lg text-amber-400"></i>
+                            <i class="fas fa-star text-lg text-amber-400"></i>
+                            <i class="fas fa-star text-lg text-amber-400"></i>
+                        </div>
+                        <div class="text-xl text-slate-900 pt-2 pb-2"> $90.00 <span class="text-slate-700 text-lg line-through">$120.00</span></div>
+                        <a href="#" class="text-center block w-2/3 mx-auto mt-4 text-white py-3 px-12 bg-amber-400 border-2 border-amber-400 cursor-pointer text-xl shadow-md shadow-lime-400/20 hover:shadow-lime-400/60 hover:bg-transparent hover:text-amber-400"> book now </a>
+                    </div>
+                </div>
+
+            <!-- </div> -->
+            
+            <div class="flex-1 rounded-lg overflow-hidden shadow-lg shadow-lime-500/50">
+                <img src="../images/p-2.jpg" class="h-96 w-full object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl text-black"><i class="fas fa-map-marker-alt text-amber-400"></i> haweii </h3>
+                    <p class="text-lg text-slate-600 py-4 px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni maiores esse? Alias, pariatur fugiat.</p>
+                    <div class="stars">
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                    </div>
+                    <div class="text-xl text-slate-900 pt-2 pb-2"> $90.00 <span class="text-slate-700 text-lg line-through">$120.00</span></div>
+                    <a href="#" class="text-center block w-2/3 mx-auto mt-4 text-white py-3 px-12 bg-amber-400 border-2 border-amber-400 cursor-pointer text-xl shadow-md shadow-lime-400/20 hover:shadow-lime-400/60 hover:bg-transparent hover:text-amber-400"> book now </a>
+                </div>
+            </div>
+            
+            <div class="flex-1 rounded-lg overflow-hidden shadow-lg shadow-lime-500/50">
+                <img src="../images/p-3.jpg" class="h-96 w-full object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl text-black"><i class="fas fa-map-marker-alt text-amber-400"></i> syndeny</h3>
+                    <p class="text-lg text-slate-600 py-4 px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni maiores esse? Alias, pariatur fugiat.</p>
+                    <div class="stars">
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                    </div>
+                    <div class="text-xl text-slate-900 pt-2 pb-2"> $90.00 <span class="text-slate-700 text-lg line-through">$120.00</span></div>
+                    <a href="#" class="text-center block w-2/3 mx-auto mt-4 text-white py-3 px-12 bg-amber-400 border-2 border-amber-400 cursor-pointer text-xl shadow-md shadow-lime-400/20 hover:shadow-lime-400/60 hover:bg-transparent hover:text-amber-400"> book now </a>
+                </div>
+            </div>
+            
+            <div class="flex-1 rounded-lg overflow-hidden shadow-lg shadow-lime-500/50">
+                <img src="../images/p-4.jpg" class="h-96 w-full object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl text-black"><i class="fas fa-map-marker-alt text-amber-400"></i> paris</h3>
+                    <p class="text-lg text-slate-600 py-4 px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni maiores esse? Alias, pariatur fugiat.</p>
+                    <div class="stars">
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                    </div>
+                    <div class="text-xl text-slate-900 pt-2 pb-2"> $90.00 <span class="text-slate-700 text-lg line-through">$120.00</span></div>
+                    <a href="#" class="text-center block w-2/3 mx-auto mt-4 text-white py-3 px-12 bg-amber-400 border-2 border-amber-400 cursor-pointer text-xl shadow-md shadow-lime-400/20 hover:shadow-lime-400/60 hover:bg-transparent hover:text-amber-400"> book now </a>
+                </div>
+            </div>
+            
+            <div class="flex-1 rounded-lg overflow-hidden shadow-lg shadow-lime-500/50">
+                <img src="../images/p-5.jpg" class="h-96 w-full object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl text-black"><i class="fas fa-map-marker-alt text-amber-400"></i> tokyo </h3>
+                    <p class="text-lg text-slate-600 py-4 px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni maiores esse? Alias, pariatur fugiat.</p>
+                    <div class="stars">
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                    </div>
+                    <div class="text-xl text-slate-900 pt-2 pb-2"> $90.00 <span class="text-slate-700 text-lg line-through">$120.00</span></div>
+                    <a href="#" class="text-center block w-2/3 mx-auto mt-4 text-white py-3 px-12 bg-amber-400 border-2 border-amber-400 cursor-pointer text-xl shadow-md shadow-lime-400/20 hover:shadow-lime-400/60 hover:bg-transparent hover:text-amber-400"> book now </a>
+                </div>
+            </div>
+            
+            <div class="flex-1 rounded-lg overflow-hidden shadow-lg shadow-lime-500/50">
+                <img src="../images/p-6.jpg" class="h-96 w-full object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl text-black"><i class="fas fa-map-marker-alt text-amber-400"></i> eypt</h3>
+                    <p class="text-lg text-slate-600 py-4 px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni maiores esse? Alias, pariatur fugiat.</p>
+                    <div class="stars">
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                        <i class="fas fa-star text-lg text-amber-400"></i>
+                    </div>
+                    <div class="text-xl text-slate-900 pt-2 pb-2"> $90.00 <span class="text-slate-700 text-lg line-through">$120.00</span></div>
+                    <a href="#" class="text-center block w-2/3 mx-auto mt-4 text-white py-3 px-12 bg-amber-400 border-2 border-amber-400 cursor-pointer text-xl shadow-md shadow-lime-400/20 hover:shadow-lime-400/60 hover:bg-transparent hover:text-amber-400"> book now </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- packages section ends -->
+
+    <!-- services section starts -->
+    <section class="services py-8 px-10" id="services">
+        <h1 class="text-center py-10 px-0">
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">s</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">e</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">r</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">v</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">i</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">c</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">e</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">s</span>
+        </h1>
+
+        <div class="box-container flex flex-wrap gap-6">
+            <div class="flex-1 rounded-lg p-4 text-center hover:shadow-lg hover:shadow-lime-300">
+                <i class="fas fa-hotel p-4 text-7xl text-amber-400"></i>
+                <h3 class="text-3xl text-slate-700">afforadable hotels</h3>
+                <p class="text-lg text-slate-800 py-4 px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur in id deleniti magni incidunt expedita fugiat ea aspernatur dolor, explicabo nostrum sequi eaque eius asperiores rem illum dignissimos nobis cum.</p>
+            </div>
+            <div class="flex-1 rounded-lg p-4 text-center hover:shadow-lg hover:shadow-lime-300">
+                <i class="fas fa-utensils p-4 text-7xl text-amber-400"></i>
+                <h3 class="text-3xl text-slate-700">food and drinks</h3>
+                <p class="text-lg text-slate-800 py-4 px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur in id deleniti magni incidunt expedita fugiat ea aspernatur dolor, explicabo nostrum sequi eaque eius asperiores rem illum dignissimos nobis cum.</p>
+            </div>
+            <div class="flex-1 rounded-lg p-4 text-center hover:shadow-lg hover:shadow-lime-300">
+                <i class="fas fa-bullhorn p-4 text-7xl text-amber-400"></i>
+                <h3 class="text-3xl text-slate-700">safety guide</h3>
+                <p class="text-lg text-slate-800 py-4 px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur in id deleniti magni incidunt expedita fugiat ea aspernatur dolor, explicabo nostrum sequi eaque eius asperiores rem illum dignissimos nobis cum.</p>
+            </div>
+            <div class="flex-1 rounded-lg p-4 text-center hover:shadow-lg hover:shadow-lime-300">
+                <i class="fas fa-globe-asia p-4 text-7xl text-amber-400"></i>
+                <h3 class="text-3xl text-slate-700">around the world</h3>
+                <p class="text-lg text-slate-800 py-4 px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur in id deleniti magni incidunt expedita fugiat ea aspernatur dolor, explicabo nostrum sequi eaque eius asperiores rem illum dignissimos nobis cum.</p>
+            </div>
+            <div class="flex-1 rounded-lg p-4 text-center hover:shadow-lg hover:shadow-lime-300">
+                <i class="fas fa-plane p-4 text-7xl text-amber-400"></i>
+                <h3 class="text-3xl text-slate-700">fastest travel</h3>
+                <p class="text-lg text-slate-800 py-4 px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur in id deleniti magni incidunt expedita fugiat ea aspernatur dolor, explicabo nostrum sequi eaque eius asperiores rem illum dignissimos nobis cum.</p>
+            </div>
+        </div>
+    </section>
+    <!-- services section ends -->
+
+    <!-- gallery section starts -->
+    <section class="gallery py-8 px-10" id="gallery">
+        <h1 class="text-center py-10 px-0">
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">g</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">a</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">l</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">l</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">e</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">r</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">y</span>
+        </h1>
+
+        <div class="flex flex-wrap gap-6">
+            <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
+                <img src="../images/g-1.jpg" class="h-full w-full object-cover">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                    <h3 class="text-4xl text-amber-400">amazing places</h3>
+                    <p class="text-2xl text-slate-300 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
+                    </p>
+                    <a href="#" class=" inline-block w-2/5 mt-4 text-white py-2 px-4 bg-amber-400 shadow-md shadow-lime-400/20 hover:shadow-lime-400/50 border-2 border-amber-400 cursor-pointer text-xl hover:bg-transparent hover:text-amber-400">see more</a>
+                </div>
+            </div>
+            <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
+                <img src="../images/g-2.jpg" class="h-full w-full object-cover">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                    <h3 class="text-4xl text-amber-400">amazing places</h3>
+                    <p class="text-2xl text-slate-300 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
+                    </p>
+                    <a href="#" class=" inline-block w-2/5 mt-4 text-white py-2 px-4 bg-amber-400 shadow-md shadow-lime-400/20 hover:shadow-lime-400/50 border-2 border-amber-400 cursor-pointer text-xl hover:bg-transparent hover:text-amber-400">see more</a>
+                </div>
+            </div>
+            <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
+                <img src="../images/g-3.jpg" class="h-full w-full object-cover">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                    <h3 class="text-4xl text-amber-400">amazing places</h3>
+                    <p class="text-2xl text-slate-300 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
+                    </p>
+                    <a href="#" class=" inline-block w-2/5 mt-4 text-white py-2 px-4 bg-amber-400 shadow-md shadow-lime-400/20 hover:shadow-lime-400/50 border-2 border-amber-400 cursor-pointer text-xl hover:bg-transparent hover:text-amber-400">see more</a>
+                </div>
+            </div>
+            <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
+                <img src="../images/g-4.jpg" class="h-full w-full object-cover">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                    <h3 class="text-4xl text-amber-400">amazing places</h3>
+                    <p class="text-2xl text-slate-300 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
+                    </p>
+                    <a href="#" class=" inline-block w-2/5 mt-4 text-white py-2 px-4 bg-amber-400 shadow-md shadow-lime-400/20 hover:shadow-lime-400/50 border-2 border-amber-400 cursor-pointer text-xl hover:bg-transparent hover:text-amber-400">see more</a>
+                </div>
+            </div>
+            <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
+                <img src="../images/g-5.jpg" class="h-full w-full object-cover">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                    <h3 class="text-4xl text-amber-400">amazing places</h3>
+                    <p class="text-2xl text-slate-300 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
+                    </p>
+                    <a href="#" class=" inline-block w-2/5 mt-4 text-white py-2 px-4 bg-amber-400 shadow-md shadow-lime-400/20 hover:shadow-lime-400/50 border-2 border-amber-400 cursor-pointer text-xl hover:bg-transparent hover:text-amber-400">see more</a>
+                </div>
+            </div>
+            <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
+                <img src="../images/g-6.jpg" class="h-full w-full object-cover">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                    <h3 class="text-4xl text-amber-400">amazing places</h3>
+                    <p class="text-2xl text-slate-300 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
+                    </p>
+                    <a href="#" class=" inline-block w-2/5 mt-4 text-white py-2 px-4 bg-amber-400 shadow-md shadow-lime-400/20 hover:shadow-lime-400/50 border-2 border-amber-400 cursor-pointer text-xl hover:bg-transparent hover:text-amber-400">see more</a>
+                </div>
+            </div>
+            <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
+                <img src="../images/g-7.jpg" class="h-full w-full object-cover">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                    <h3 class="text-4xl text-amber-300">amazing places</h3>
+                    <p class="text-2xl text-slate-400 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
+                    </p>
+                    <a href="#" class=" inline-block w-2/5 mt-4 text-white py-2 px-4 bg-amber-400 shadow-md shadow-lime-400/20 hover:shadow-lime-400/50 border-2 border-amber-400 cursor-pointer text-xl hover:bg-transparent hover:text-amber-400">see more</a>
+                </div>
+            </div>
+            <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
+                <img src="../images/g-8.jpg" class="h-full w-full object-cover">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                    <h3 class="text-4xl text-amber-300">amazing places</h3>
+                    <p class="text-2xl text-slate-400 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
+                    </p>
+                    <a href="#" class=" inline-block w-2/5 mt-4 text-white py-2 px-4 bg-amber-400 shadow-md shadow-lime-400/20 hover:shadow-lime-400/50 border-2 border-amber-400 cursor-pointer text-xl hover:bg-transparent hover:text-amber-400">see more</a>
+                </div>
+            </div>
+            <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
+                <img src="../images/g-9.jpg" class="h-full w-full object-cover">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                    <h3 class="text-4xl text-amber-300">amazing places</h3>
+                    <p class="text-2xl text-slate-400 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
+                    </p>
+                    <a href="#" class=" inline-block w-2/5 mt-4 text-white py-2 px-4 bg-amber-400 shadow-md shadow-lime-400/20 hover:shadow-lime-400/50 border-2 border-amber-400 cursor-pointer text-xl hover:bg-transparent hover:text-amber-400">see more</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- gallery section ends -->
+
+    <!-- review section starts -->
+    <section class="review py-8 px-10" id="review">
+        <h1 class="text-center py-10 px-0">
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">r</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">e</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">v</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">i</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">e</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">w</span>
+        </h1>
+
+        <div class="snap-x my-2 pb-8 mx-auto flex items-center justify-around">
+            <div class="snap-start snap-always">
+                <div class="p-8 text-center shadow-md shadow-lime-400/50 rounded-lg">
+                    <img class="h-52 w-52 rounded-full object-cover mb-4 mx-auto" src="../images/pic1.png" alt="">
+                    <h3 class="text-4xl text-slate-800">john deo</h3>
+                    <p class="text-xl text-slate-900 py-4 px-0 leading-7 tracking-wide">Lorem ipsum dolor sit amet, consectetur adipisicing 
+                        elit. Voluptatum praesentium modi culpa laborum. 
+                        Odit doloremque, sit corrupti quae ex impedit. 
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Doloribus, ratione.
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="snap-start snap-always">
+                <div class="p-8 text-center shadow-md shadow-lime-400/50 rounded-lg">
+                    <img class="h-52 w-52 rounded-full object-cover mb-4 mx-auto" src="../images/pic2.png" alt="">
+                    <h3 class="text-4xl text-slate-800">john deo</h3>
+                    <p class="text-xl text-slate-900 py-4 px-0 leading-7 tracking-wide">Lorem ipsum dolor sit amet, consectetur adipisicing 
+                        elit. Voluptatum praesentium modi culpa laborum. 
+                        Odit doloremque, sit corrupti quae ex impedit. 
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Doloribus, ratione.
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="snap-start snap-always">
+                <div class="p-8 text-center shadow-md shadow-lime-400/50 rounded-lg">
+                    <img class="h-52 w-52 rounded-full object-cover mb-4 mx-auto" src="../images/pic3.png" alt="">
+                    <h3 class="text-4xl text-slate-800">john deo</h3>
+                    <p class="text-xl text-slate-900 py-4 px-0 leading-7 tracking-wide">Lorem ipsum dolor sit amet, consectetur adipisicing 
+                        elit. Voluptatum praesentium modi culpa laborum. 
+                        Odit doloremque, sit corrupti quae ex impedit. 
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Doloribus, ratione.
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="snap-start snap-always">
+                <div class="p-8 text-center shadow-md shadow-lime-400/50 rounded-lg">
+                    <img class="h-52 w-52 rounded-full object-cover mb-4 mx-auto" src="../images/pic4.png" alt="">
+                    <h3 class="text-4xl text-slate-800">john deo</h3>
+                    <p class="text-xl text-slate-900 py-4 px-0 leading-7 tracking-wide">Lorem ipsum dolor sit amet, consectetur adipisicing 
+                        elit. Voluptatum praesentium modi culpa laborum. 
+                        Odit doloremque, sit corrupti quae ex impedit. 
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Doloribus, ratione.
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                        <i class="fas fa-star text-amber-400 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <section>
+    <!-- review section ends -->
+
+    <!-- contact section starts -->
+    <section class="contact py-8 px-10" id="contact">
+        
+        <h1 class="text-center py-10 px-0">
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">c</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">o</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">n</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">t</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">a</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">c</span>
+            <span class="text-4xl bg-amber-100 text-amber-400 rounded-lg py-1 px-4">t</span>
+        </h1>
+
+        <div class="flex flex-wrap gap-6 items-center">
+            <div class="flex-2">
+                <img class="w-full" src="../images/contact-img.svg" alt="">
+            </div>
+
+            <form action="" class="flex-3 p-8 shadow-lg rounded-lg transition-opacity shadow-lime-400/20 hover:shadow-lime-400/50">
+                <div class="flex flex-wrap justify-between">
+                    <input class="w-5/12 my-4 mx-1 p-2 text-2xl text-slate-700 bg-slate-100 transform-none rounded-lg" type="text" placeholder="name">
+                    <input class="w-5/12 my-4 mx-1 p-2 text-2xl text-slate-700 bg-slate-100 transform-none rounded-lg" type="email" placeholder="email">
+                </div>
+                <div class="flex flex-wrap justify-between">
+                    <input class="w-5/12 my-4 mx-1 p-2 text-2xl text-slate-700 bg-slate-100 transform-none rounded-lg" type="number" placeholder="number">
+                    <input class="w-5/12 my-4 mx-1 p-2 text-2xl text-slate-700 bg-slate-100 transform-none rounded-lg" type="text" placeholder="subject">
+                </div>
+                <textarea class="my-4 mx-2 p-2 text-2xl text-slate-700 bg-slate-100 transform-none rounded-lg h-64 resize-none w-full" placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="block mx-auto capitalize mt-4 text-white py-3 px-8 bg-amber-400 shadow-md shadow-lime-400/20 hover:shadow-lime-400/50 border-2 border-amber-400 cursor-pointer text-xl hover:bg-transparent hover:text-amber-400" value="send message">
+            </form>
+        </div>
+
+    </section>
+    <!-- contact section ends -->
+
+    <!-- brand section starts -->
+    <section class="py-8 px-10">
+        <div class="snap-x my-4 mx-auto flex items-center justify-around snap-mandatory">
+            <div class="snap-start mx-4">
+                <img src="../images/1.jpg" alt="">
+            </div>
+            <div class="snap-start mx-4">
+                <img src="../images/2.jpg" alt="">
+            </div>
+            <div class="snap-start mx-4">
+                <img src="../images/3.jpg" alt="">
+            </div>
+            <div class="snap-start mx-4">
+                <img src="../images/4.jpg" alt="">
+            </div>
+            <div class="snap-start mx-4">
+                <img src="../images/5.jpg" alt="">
+            </div>
+            <div class="snap-start mx-4">
+                <img src="../images/6.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- brand section ends -->
+
+    <!-- footer section starts -->
+    <section class="absolute left-0 right-0 w-screen bg-slate-800 m-0 p-4">
+        <div class="flex flex-wrap gap-6">
+            <div class="py-4 px-0 flex-4 text-center">
+                <h3 class="text-2xl py-1 px-0 text-slate-300">about us</h3>
+                <p class="text-xl pt-20 pb-3 px-0 text-slate-400">Lorem ipsum, dolor sit amet consectetur 
+                . Adipisci tenetur 
+                aperiam voluptate mollitia!</p>
+            </div>
+            <div class="py-4 px-0 flex-4">
+                <h3 class="text-2xl py-1 px-0 text-slate-300">branch locations</h3>
+                <a class="block text-lg py-3 px-0 text-slate-400 hover:text-amber-400 hover:underline" href="#">USA</a>
+                <a class="block text-lg py-3 px-0 text-slate-400 hover:text-amber-400 hover:underline" href="#">UK</a>
+                <a class="block text-lg py-3 px-0 text-slate-400 hover:text-amber-400 hover:underline" href="#">Japan</a>
+                <a class="block text-lg py-3 px-0 text-slate-400 hover:text-amber-400 hover:underline" href="#">France</a>
+            </div>
+            <div class="py-4 px-0 flex-4">
+                <h3 class="text-2xl py-1 px-0 text-slate-300">quick links</h3>
+                <a class="block text-lg py-3 px-0 text-slate-400 hover:text-amber-400 hover:underline" href="#home">home</a>
+                <a class="block text-lg py-3 px-0 text-slate-400 hover:text-amber-400 hover:underline" href="#book">book</a>
+                <a class="block text-lg py-3 px-0 text-slate-400 hover:text-amber-400 hover:underline" href="#packages">packages</a>
+                <a class="block text-lg py-3 px-0 text-slate-400 hover:text-amber-400 hover:underline" href="#services">services</a>
+                <a class="block text-lg py-3 px-0 text-slate-400 hover:text-amber-400 hover:underline" href="#gallery">gallery</a>
+                <a class="block text-lg py-3 px-0 text-slate-400 hover:text-amber-400 hover:underline" href="#review">review</a>
+                <a class="block text-lg py-3 px-0 text-slate-400 hover:text-amber-400 hover:underline" href="#contact">contact</a>
+            </div>
+            <div class="py-4 px-0 flex-4">
+                <h3 class="text-2xl py-1 px-0 text-slate-300">follow us</h3>
+                <a class="block text-lg py-3 px-0 text-slate-400 hover:text-amber-400 hover:underline" href="#">facebook</a>
+                <a class="block text-lg py-3 px-0 text-slate-400 hover:text-amber-400 hover:underline" href="#">twitter</a>
+                <a class="block text-lg py-3 px-0 text-slate-400 hover:text-amber-400 hover:underline" href="#">instagram</a>
+                <a class="block text-lg py-3 px-0 text-slate-400 hover:text-amber-400 hover:underline" href="#">linkin</a>
+            </div>
+        </div>
+
+        <h1 class="text-center py-8 px-4 mt-4 text-3xl font-normal text-slate-600 border-t-2 border-t-amber-400/20">
+            created by <span class="text-amber-400/50">web developer</span>
+            | all right reserved!
+        </h1>
+    </section>
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

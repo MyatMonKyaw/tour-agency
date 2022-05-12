@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .clip-path {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .clip-path-hover {
+        clip-path: polygon(0 0 , 100% 0, 100% 100%, 0 100%);
+    }
+ 
+ }
