@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="../dist/output.css">
     <title>Mist Tour Agency</title>
 </head>
-<body class="font-poppins m-0 p-0 box-border capitalize focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-indigo-400 border-0 selection:bg-amber-400 selection:text-white
-text-[62.5%] overflow-x-hidden scroll-pt-24 scroll-smooth transform duration-200 ease-in">
+<body class="font-poppins m-0 p-0 box-border capitalize focus:outline-none focus:ring-2 focus:ring-indigo-400 border-0 selection:bg-amber-400 selection:text-white
+text-[62.5%] overflow-x-hidden scroll-pt-24 scroll-smooth transform duration-200 ease-out">
     <!-- header section starts -->
     <header class="fixed top-0 left-0 right-0 bg-slate-700 z-[1000] flex items-center justify-between py-4 px-[9%]">
-        <div id="menu-bar" class="fas fa-bars md:hidden text-white border-2 border-white rounded-lg text-4xl cursor-pointer"></div>
+        <div id="menu-bar" class="fas fa-bars md:hidden text-white border-2 border-white rounded-lg text-4xl cursor-pointer py-2 px-5"></div>
 
         <div class="logo flex items-center justify-around cursor-pointer">
             <img src="../images/logo.png" class="w-20 h-16 drop-shadow-lg">
             <a href="#" class="logo text-3xl font-bold text-white drop-shadow-lg"><span class="text-amber-400">T</span>ravel</a>
         </div>
 
-        <nav class="navbar">
+        <nav class="navbar invisible md:visible">
             <a class="relative text-white text-xl my-0 mx-3 pb-1 transform hover:text-amber-400 after:border-b-2 after:border-amber-400 after:w-full after:bg-amber-400 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left" href="#home">home</a>
             <a class="relative text-white text-xl my-0 mx-3 pb-1 transform hover:text-amber-400 after:border-b-2 after:border-amber-400 after:w-full after:bg-amber-400 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left" href="#book">book</a>
             <a class="relative text-white text-xl my-0 mx-3 pb-1 transform hover:text-amber-400 after:border-b-2 after:border-amber-400 after:w-full after:bg-amber-400 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left" href="#packages">packages</a>
@@ -66,12 +66,12 @@ text-[62.5%] overflow-x-hidden scroll-pt-24 scroll-smooth transform duration-200
             <a href="#" class="btn inline-block w-2/5 mt-4 text-white py-3 px-12 bg-amber-400 shadow-md shadow-lime-400/20 hover:shadow-lime-400/50 border-2 border-amber-400 cursor-pointer text-xl hover:bg-transparent hover:text-amber-400">discover more</a>
         </div>
 
-        <div class="controls p-3 rounded-full bg-black relative top-40">
-            <span class="vid-btn active w-6 h-6 inline-block rounded-full bg-slate-500 cursor-pointer my-0 mx-2" data-src="../images/vid-1.mp4"></span>
-            <span class="vid-btn w-6 h-6 inline-block rounded-full bg-amber-300 cursor-pointer my-0 mx-2" data-src="../images/vid-2.mp4"></span>
-            <span class="vid-btn w-6 h-6 inline-block rounded-full bg-amber-300 cursor-pointer my-0 mx-2" data-src="../images/vid-3.mp4"></span>
-            <span class="vid-btn w-6 h-6 inline-block rounded-full bg-amber-300 cursor-pointer my-0 mx-2" data-src="../images/vid-4.mp4"></span>
-            <span class="vid-btn w-6 h-6 inline-block rounded-full bg-amber-300 cursor-pointer my-0 mx-2" data-src="../images/vid-5.mp4"></span>
+        <div class="controls p-3 rounded-full bg-black/50 relative top-40 opacity-70">
+            <span class="vid-btn active w-6 h-6 inline-block rounded-full bg-amber-300 cursor-pointer my-0 mx-2 hover:bg-amber-500" data-src="../images/vid-1.mp4"></span>
+            <span class="vid-btn w-6 h-6 inline-block rounded-full bg-amber-300 cursor-pointer my-0 mx-2 hover:bg-amber-500" data-src="../images/vid-2.mp4"></span>
+            <span class="vid-btn w-6 h-6 inline-block rounded-full bg-amber-300 cursor-pointer my-0 mx-2 hover:bg-amber-500" data-src="../images/vid-3.mp4"></span>
+            <span class="vid-btn w-6 h-6 inline-block rounded-full bg-amber-300 cursor-pointer my-0 mx-2 hover:bg-amber-500" data-src="../images/vid-4.mp4"></span>
+            <span class="vid-btn w-6 h-6 inline-block rounded-full bg-amber-300 cursor-pointer my-0 mx-2 hover:bg-amber-500" data-src="../images/vid-5.mp4"></span>
         </div>
 
         <div class="video-container">
@@ -302,7 +302,7 @@ text-[62.5%] overflow-x-hidden scroll-pt-24 scroll-smooth transform duration-200
         <div class="flex flex-wrap gap-6">
             <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
                 <img src="../images/g-1.jpg" class="h-full w-full object-cover">
-                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transform duration-300 ease-in group-hover:top-0">
                     <h3 class="text-4xl text-amber-400">amazing places</h3>
                     <p class="text-2xl text-slate-300 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
                     </p>
@@ -311,7 +311,7 @@ text-[62.5%] overflow-x-hidden scroll-pt-24 scroll-smooth transform duration-200
             </div>
             <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
                 <img src="../images/g-2.jpg" class="h-full w-full object-cover">
-                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transform duration-300 ease-in group-hover:top-0">
                     <h3 class="text-4xl text-amber-400">amazing places</h3>
                     <p class="text-2xl text-slate-300 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
                     </p>
@@ -320,7 +320,7 @@ text-[62.5%] overflow-x-hidden scroll-pt-24 scroll-smooth transform duration-200
             </div>
             <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
                 <img src="../images/g-3.jpg" class="h-full w-full object-cover">
-                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transform duration-300 ease-in group-hover:top-0">
                     <h3 class="text-4xl text-amber-400">amazing places</h3>
                     <p class="text-2xl text-slate-300 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
                     </p>
@@ -329,7 +329,7 @@ text-[62.5%] overflow-x-hidden scroll-pt-24 scroll-smooth transform duration-200
             </div>
             <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
                 <img src="../images/g-4.jpg" class="h-full w-full object-cover">
-                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transform duration-300 ease-in group-hover:top-0">
                     <h3 class="text-4xl text-amber-400">amazing places</h3>
                     <p class="text-2xl text-slate-300 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
                     </p>
@@ -338,7 +338,7 @@ text-[62.5%] overflow-x-hidden scroll-pt-24 scroll-smooth transform duration-200
             </div>
             <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
                 <img src="../images/g-5.jpg" class="h-full w-full object-cover">
-                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transform duration-300 ease-in group-hover:top-0">
                     <h3 class="text-4xl text-amber-400">amazing places</h3>
                     <p class="text-2xl text-slate-300 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
                     </p>
@@ -347,7 +347,7 @@ text-[62.5%] overflow-x-hidden scroll-pt-24 scroll-smooth transform duration-200
             </div>
             <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
                 <img src="../images/g-6.jpg" class="h-full w-full object-cover">
-                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transform duration-300 ease-in group-hover:top-0">
                     <h3 class="text-4xl text-amber-400">amazing places</h3>
                     <p class="text-2xl text-slate-300 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
                     </p>
@@ -356,7 +356,7 @@ text-[62.5%] overflow-x-hidden scroll-pt-24 scroll-smooth transform duration-200
             </div>
             <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
                 <img src="../images/g-7.jpg" class="h-full w-full object-cover">
-                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transform duration-300 ease-in group-hover:top-0">
                     <h3 class="text-4xl text-amber-300">amazing places</h3>
                     <p class="text-2xl text-slate-400 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
                     </p>
@@ -365,7 +365,7 @@ text-[62.5%] overflow-x-hidden scroll-pt-24 scroll-smooth transform duration-200
             </div>
             <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
                 <img src="../images/g-8.jpg" class="h-full w-full object-cover">
-                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transform duration-300 ease-in group-hover:top-0">
                     <h3 class="text-4xl text-amber-300">amazing places</h3>
                     <p class="text-2xl text-slate-400 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
                     </p>
@@ -374,7 +374,7 @@ text-[62.5%] overflow-x-hidden scroll-pt-24 scroll-smooth transform duration-200
             </div>
             <div class="overflow-hidden shadow-lg shadow-lime-500/50 flex-1 h-96 relative group">
                 <img src="../images/g-9.jpg" class="h-full w-full object-cover">
-                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transition duration-200 ease-in group-hover:top-0">
+                <div class="absolute top-[-100%] left-0 h-full w-full text-center bg-slate-800 bg-opacity-60 p-8 pt-20 transform duration-300 ease-in group-hover:top-0">
                     <h3 class="text-4xl text-amber-300">amazing places</h3>
                     <p class="text-2xl text-slate-400 py-2 px-0 pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
                     </p>
@@ -578,7 +578,7 @@ text-[62.5%] overflow-x-hidden scroll-pt-24 scroll-smooth transform duration-200
         </div>
 
         <h1 class="text-center py-8 px-4 mt-4 text-3xl font-normal text-slate-600 border-t-2 border-t-amber-400/20">
-            created by <span class="text-amber-400/50">web developer</span>
+            created by <span class="text-amber-400/50">mr. web developer</span>
             | all right reserved!
         </h1>
     </section>
